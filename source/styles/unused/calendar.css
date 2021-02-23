@@ -1,0 +1,106 @@
+/* @charset "windows-1251"; */
+
+.calendar {
+	zoom: 1;
+	
+	}	.calendar .header {
+			width: 100%;
+			margin-bottom: 10px;
+			}	.calendar .header td {
+					vertical-align: baseline;
+					}	.calendar .header .prev {
+							text-align: left;
+							}	.calendar .header .prev a {
+									font-size: 12px;
+									font-family: Tahoma;
+									behavior: expression(!this.a ? (this.a = 1, (this.innerHTML = "&larr;&nbsp;" + this.innerHTML)) : 0);
+							}	.calendar .header .prev a:before {
+									content: "\2190\a0";
+					}	.calendar .header .next {
+							text-align: right;
+							}	.calendar .header .next a {
+									font-size: 12px;
+									font-family: Tahoma;
+									behavior: expression(!this.a ? (this.a = 1, (this.innerHTML = this.innerHTML + "&nbsp;&rarr;")) : 0);
+							}	.calendar .header .next a:after {
+									content: "\a0\2192";
+					}	.calendar .header h4 {
+							font-weight: bold;
+							font-size: 12px;
+
+	}	.calendar .mesh {
+			width: 100%;
+			}	.calendar .mesh th {
+					text-transform: capitalize;
+					font-weight: bold;
+					font-size: 11px;
+					text-indent: 3px;
+					text-align: center;
+					padding-bottom: 3px;
+					width: 14.28%;
+					color: #9a9904;
+				
+				}	.calendar .mesh th.dayoff {
+						color: #cc0003;
+				
+				}	.calendar .mesh td {
+						border: 1px solid #ccc;
+				
+						}	.calendar .mesh a {
+								position: relative;
+								display: block;
+								height: 42px;
+								margin: -1px; padding: 0;
+								text-decoration: none;
+								border: 1px solid #ccc;
+								
+						}	.calendar .mesh a.prevmonth,
+							.calendar .mesh a.nextmonth {
+								
+						}	.calendar .mesh a.today {
+								background: #ccebcd;
+								
+						}	.calendar .mesh a.selected {
+								border: 1px solid #cc0001;
+								z-index: 2;
+				
+						}	.calendar .mesh a.prevmonth .date,
+							.calendar .mesh a.nextmonth .date {
+								color: #ccc;
+
+								}	.calendar .mesh a .date {
+										position: absolute;
+										top: 0; right: 0;
+										padding: 2px 2px 1px 2px;
+										font-size: 9px;
+										color: #676767;
+								
+								}	.calendar .mesh a .flags {
+									display: block;
+									padding: 2px;
+									/* margin: 5px; */
+									
+									}	.calendar .mesh a .flags li {
+											width: 19px; height: 11px;
+											line-height: 9px;
+											font-size: 9px;
+											text-decoration: none;
+											color: black;
+											padding: 1px 2px;
+											margin-bottom: 1px;
+											background: url(/usr/tpl/picts/icon_calendar_flags.gif);
+											background-repeat: no-repeat;
+									}	.calendar .mesh a .flags .scheduled {
+										background-position: 0 0;
+									}	.calendar .mesh a .flags .recommended {
+										background-position: -19px 0;
+									}	.calendar .mesh a .flags .friend-s {
+										background-position: -38px 0;
+									}	.calendar .mesh a.passday .flags .scheduled,
+										.calendar .mesh a.passday .flags .recommended,
+										.calendar .mesh a.passday .flags .friend-s {
+											background-position: -76px 0;
+									}	.calendar .mesh a:hover {
+											border: 1px solid #cc0001;
+											z-index: 2;
+}

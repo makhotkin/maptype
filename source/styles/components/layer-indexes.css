@@ -1,0 +1,15 @@
+* {
+	}	.b-header {
+			z-index: 15;
+	}	#body #content {
+			/* z-index: 10; */
+	}	#footer {
+			z-index: 20;
+	}	.popup {
+			z-index: 20;
+	}	.bubble {
+			z-index: 20;
+	}	.eclipse {
+			z-index: 15;
+
+}

@@ -1,0 +1,75 @@
+@charset "windows-1251";
+
+.document {
+	padding: 40px;
+
+	}	.document p {
+			font-size: 12px;
+			margin-bottom: 12px;
+
+	}	.document h1 {
+			font-size: 20px;
+			margin-bottom: 30px;
+			
+	}	.document h3 {
+			font-weight: bold;
+			/* margin-bottom: 1em; */
+
+	}	.document .content {
+			/* border: 1px dashed #ccc; */
+			margin: 0 60px -30px 110px;
+			background: white;
+
+	}	.document form {
+			margin: 0 0px 0 -130px;
+			margin-bottom: 30px;
+			/* border: 1px solid red; */
+			zoom: 1;
+
+			}	.document form table.fields {
+					margin-bottom: -10px;
+					width: 100%;
+
+					}	.document form table td {
+							vertical-align: baseline;
+			
+			}	.document form table .field_name,
+				.document form table .field_formelem {
+					padding-bottom: 10px;
+					/* border: 1px solid green; */
+			
+			}	.document form table .field_name {
+					width: 130px;
+					white-space: normal;
+
+					}	.document form table .field_name label {
+							display: block;
+							text-align: right;
+							margin-right: 15px;
+							vertical-align: baseline;
+
+			}	.document form table .field_formelem {
+					width: 100%;
+
+	}	.document .text-block {
+			/* border: 1px solid red; */
+			margin-bottom: 2em;
+			}	.document .text-block * {
+					margin-bottom: expression(!this.nextSibling ? "0" : "");
+			}	.document .text-block *:last-child {
+					margin-bottom: 0;
+
+	}	.document ul.submenu1 {
+			margin: 0 -60px 0 -150px;
+			padding: 0 100px 0 150px;
+			margin-bottom: 30px;
+
+			}	.document ul.submenu li {
+					/* padding-right: 10px; */
+					/* border: 1px solid red; */
+
+					}	.document ul.submenu li a {
+							display: block;
+							/* padding: 10px; */
+							
+}

@@ -1,0 +1,36 @@
+@charset "windows-1251";
+
+
+/* Главный баннер */
+@import "components/banner_main.css";
+/* Баблл */
+@import "components/bubble.css";
+
+/* Скролл */
+@import "components/scrollelem.css";
+
+/* График */
+@import "components/chart.css";
+/* Документ */
+@import "components/document.css";
+/* Фильтр */
+@import "components/filter.css";
+/* Форма */
+@import "components/info-block.css";
+/* Лист */
+@import "components/list.css";
+/* Пагинатор */
+@import "components/paginator.css";
+/* Попап */
+@import "components/popup.css";
+/* Промо-блок */
+@import "components/promo.css";
+@import "components/radiuses.css";
+/* Рубрикатор */
+@import "components/rubricator.css";
+/* Подсказка над объектами карты */
+@import "components/tooltip.css";
+
+
+/* Расслойка */
+@import "components/layer-indexes.css";

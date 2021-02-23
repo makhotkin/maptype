@@ -1,0 +1,21 @@
+#banner1 {
+	background: black;
+	text-align: center;
+	padding: 1px 20px;
+	position: relative;
+	z-index: 5;
+	font-size: 0;
+	}	#banner1 iframe {
+			padding: 5px;
+			border: 1px solid red;
+	}	#banner1 img {
+			text-align: center;
+			display: inline-block;
+			//display: block;
+	}	#banner1 .icon-hide {
+			position: absolute;
+			top: 0; right: 5px;
+			text-decoration: none;
+			color: white;
+			font: 17px Arial;
+}

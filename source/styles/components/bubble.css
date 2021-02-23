@@ -1,0 +1,200 @@
+@charset "windows-1251";
+
+.bubble_holder {
+	position: absolute;
+	top: auto; left: auto;
+	z-index: 100;
+}
+
+.bubble {
+	position: relative;
+	//height: 1;
+	display: inline-block;
+	//display: inline;
+	/* Обнуление свойств некоторых тегов */
+	}	.bubble .bubble_cn,
+		.bubble .bubble_cn b,
+		.bubble .bubble_cn b u {
+			display: block;
+			font-size: 0;
+			font-style: normal;
+			font-weight: normal;
+			text-decoration: none;
+
+	}	.bubble .bubble_cn {
+			position: absolute;
+			top: 0; left: 0;
+			overflow: hidden;
+			width: 50%; height: 50%;
+			}	.bubble .bubble_cn b {
+					position: absolute;
+					width: 443px; height: 232px;
+					overflow: hidden;
+					/* Спрей */
+					}	.bubble .bubble_cn b u {
+							margin-top: 0; margin-left: 0;
+							width: 1000px; height: 1000px;
+							background: url(/usr/tpl/picts/shadow.png) 0 0 no-repeat;
+			
+	}	.bubble .bubble_tl {
+			top: 0; left: 0;
+			}	.bubble .bubble_tl b {
+					top: 0; left: 0;
+	}	.bubble .bubble_tr {
+			top: 0; left: 50%;
+			}	.bubble .bubble_tr b {
+					top: 0; right: 0;
+	}	.bubble .bubble_bl {
+			top: 50%; left: 0;
+			}	.bubble .bubble_bl b {
+					bottom: 0; left: 0;
+	}	.bubble .bubble_br {
+			top: 50%; left: 50%;
+			}	.bubble .bubble_br b {
+					bottom: 0; right: 0;
+
+	}	.bubble .bubble_body {
+			position: relative;
+			display: block;
+			//display: inline-block;
+			z-index: 1;
+			margin: 0 7px 8px 2px;
+}
+
+
+.bubble .bubble_closer {
+	position: absolute;
+	top: 0; right: 4px;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+
+.bubble .bubble_content {
+	position: relative;
+	padding: 20px;
+	width: 300px;
+	
+	}	.bubble .bubble-hint {
+			border: 1px solid red;
+			
+			}	.bubble .bubble_content .icon {
+					position: absolute;
+					display: block;
+					width: 48px; height: 48px;
+					background-image: url(/usr/tpl/picts/tootip-icons.gif);
+					background-repeat: no-repeat;
+			
+			}	.bubble .tooltip .icon {
+					background-position: 0 0;
+					
+			}	.bubble .confirm .icon {
+					background-position: -96px 0;
+					
+			}	.bubble .event .icon {
+					background-position: -48px 0;
+			
+			}	.bubble .bubble_content .text {
+					padding-top: 5px;
+					padding-left: 58px;
+					min-height: 48px;
+					//height: 48px;
+					margin-bottom: 10px;
+					
+}
+
+
+
+.bubble .tooltip #bubbleButtonYes,
+.bubble .tooltip #bubbleButtonNo {
+	 display: none;
+}
+
+.bubble .confirm #bubbleButtonOk,
+.bubble .confirm #doNotShowAgain {
+	 display: none;
+}
+
+.bubble .event #bubbleButtonYes,
+.bubble .event #bubbleButtonNo,
+.bubble .event #doNotShowAgain  {
+	 display: none;
+}
+
+
+.bubble2_holder {
+	position: absolute;
+	top: auto; left: auto;
+	z-index: 100;
+}
+
+.bubble2 {
+	position: relative;
+	//height: 1;
+	display: inline-block;
+	//display: inline;
+
+	/* Обнуление свойств некоторых тегов */
+	}	.bubble2 .bubble_cn,
+		.bubble2 .bubble_cn b,
+		.bubble2 .bubble_cn b u {
+			display: block;
+			font-size: 0;
+			font-style: normal;
+			font-weight: normal;
+			text-decoration: none;
+
+	}	.bubble2 .bubble_cn {
+			position: absolute;
+			top: 0; left: 0;
+			overflow: hidden;
+			width: 50%; height: 50%;
+			}	.bubble2 .bubble_cn b {
+					position: absolute;
+					width: 384px; height: 449px;
+					overflow: hidden;
+					/* Спрей */
+					}	.bubble2 .bubble_cn b u {
+							margin-top: 0; margin-left: 0;
+							width: 1000px; height: 1000px;
+							background: url(/usr/tpl/picts/shadow2.png) 0 0 no-repeat;
+			
+	}	.bubble2 .bubble_tl {
+			top: 0; left: 0;
+			}	.bubble2 .bubble_tl b {
+					top: 0; left: 0;
+	}	.bubble2 .bubble_tr {
+			top: 0; left: 50%;
+			}	.bubble2 .bubble_tr b {
+					top: 0; right: 0;
+	}	.bubble2 .bubble_bl {
+			top: 50%; left: 0;
+			}	.bubble2 .bubble_bl b {
+					bottom: 0; left: 0;
+	}	.bubble2 .bubble_br {
+			top: 50%; left: 50%;
+			}	.bubble2 .bubble_br b {
+					bottom: 0; right: 0;
+
+	}	.bubble2 .bubble_body {
+			position: relative;
+			display: block;
+			//display: inline-block;
+			z-index: 1;
+			padding: 5px 7px 7px 5px;
+	}
+
+
+.bubble2 .bubble_closer {
+	position: absolute;
+	top: 0; right: 4px;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+
+.bubble2 .bubble_content {
+	position: relative;
+	background: white;
+	padding: 10px;
+}

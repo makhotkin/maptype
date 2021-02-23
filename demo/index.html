@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<!--[if IE 6 ]><link rel="stylesheet" type="text/css" href="style_ie.css" />
+<META HTTP-EQUIV="imagetoolbar" CONTENT="no"><![endif]-->
+<meta http-equiv=X-UA-Compatible content="IE=8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="js/jquery-1.2.6.js"></script>
+<script src="map.js"></script>
+<title>Карта без геоданных</title>
+</head>
+
+<body>
+
+  <div id="header">
+  Карта...<br/>
+  <span class="howtouse">Чтобы добавить введем id и координаты</span>
+  <input type="text" class="n" maxlength="9" id="poi_id" value="id" onFocus="if (value == 'id') {value =''}" onBlur="if (value == '') {value = 'id'}" onClick="this.focus();"/>
+  <input type="text" class="n" maxlength="9" id="poi_x" value="X" onFocus="if (value == 'X') {value =''}" onBlur="if (value == '') {value = 'X'}" onClick="this.focus();" />
+  <input type="text" class="n" maxlength="9" id="poi_y" value="Y" onFocus="if (value == 'Y') {value =''}" onBlur="if (value == '') {value = 'Y'}" onClick="this.focus();" />
+	<input type="button" value="Установить радиусы" id="setRadii" />
+	<input type="button" value="Добавить объект" id="addMark" />  
+  <br/>
+  <span class="howtouse">Shift-клик чтобы запомнить координаты</span>
+	<input type="button" value="Показать/cкрыть все отметки" id="showMarks" />   
+  <input type="button" value="Переместить в" id="moveTo" />    
+ 	<input type="button" value="Показать/скрыть радиусы" id="showAvail" />    
+
+  </div> 
+  <div id="page">
+    <div id="infopanel">
+    	<div id="stats">
+        <span id="debugger">--</span>
+      </div>
+    </div> 
+
+    <div class="map">
+      <div id="map-zoom">
+        <input id="map-zoom-in" type="image" src="img/plus.gif" />
+        <div id="map-zoom-rails">
+          <div id="map-zoom-slider"></div>
+        </div>
+        <input id="map-zoom-out" type="image" src="img/minus.gif" /><!-- some shadows and other shit -->
+      </div>   
+	
+      <div id="map-infobubble">
+        <div id="map-infobubble-holder">
+          <div id="map-infobubble-contents"></div>
+          <div id="map-infobubble-close">X</div>          
+          <!-- Любые теги внутри и около, та тень что есть - она тут только для примера -->
+          <div class="shadow_r"></div>
+          <div class="shadow_d"></div>
+          <div class="shadow_rd"></div>
+        </div>
+      </div>
+      
+      <div id="map-extra-contents">
+				<div class="copyright">&copy; 2008 Max Makhotkin</div>
+        <div class="center-point" style="background-color:lime; position:absolute; width: 4px; height: 4px;"></div>      
+      </div>      
+    
+    </div>	
+   
+    <div id="podval">
+    Это подвал, в нем можно хранить копирайты и все остальное
+    </div>      
+  </div>
+<script>
+function onResize( clientSize )
+{	
+// Тут зависит как наверстано. Если размеры контейнера с картой получаются автоматически, то их надо прочитать
+// Иначе (по умолчнию) мы прописываем, какими должны быть размеры карты... вобщем размер карты как функция от размера клиентской части.
+
+
+	clientSize[0] -= 254;
+	clientSize[1] -= 124;
+
+// Можно всякие остальные элементы тоже корректировать положение	
+	$("#stats").css( 'height', clientSize[1] );
+	
+// Зеленая точка полезна чтобы проверять
+	$("div.center-point").css( 'left', clientSize[0] / 2 - 2 ).css( 'top', clientSize[1] / 2 - 2 );
+	return ;
+}
+
+$(document).ready( function() {
+
+	var map =	new mapType( { x0: 413153, y0: 6178217, initialScale: 1, callback: { resize : onResize } } );
+
+	function addSome(type) { 
+		var id = $('#poi_id').val() == "id" ? Math.round(Math.random() * 100000) : $('#poi_id').val();
+		var x = $('#poi_x').val() == "X" ? 0 : $('#poi_x').val();
+		var y = $('#poi_y').val() == "Y" ? 0 : $('#poi_y').val();		
+		map.addMark( id, x, y, type, "Приблизительное описание объекта" ); 
+	} 
+	
+	function scroll2() { 
+		var x = $('#poi_x').val() == "X" ? 0 : $('#poi_x').val();
+		var y = $('#poi_y').val() == "Y" ? 0 : $('#poi_y').val();		
+		map.scrollTo( parseFloat(x), parseFloat(y), 3 ); 
+	} 
+
+	
+	$("#addMark").click( function() { addSome( 'bank' ); }  );
+	$("#setRadii").click( function() { addSome( 'radii' ); }  );	
+	$("#moveTo").click( scroll2 );		
+	$("#showMarks").click( function() { map.toggleMarks(); } );		
+	$("#showAvail").click( function() { map.toggleRadius(); } );			
+} );
+
+</script>    
+
+</body>
+</html>

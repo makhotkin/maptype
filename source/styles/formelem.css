@@ -1,0 +1,265 @@
+@charset "windows-1251";
+
+/* --------------- ОБНУЛЕНИЕ --------------- */
+
+.formelem {
+	display: -moz-inline-box;
+	display: inline-block;
+	//display: inline;
+	zoom: 1;
+	
+	}	.formelem .fe-body {
+			position: relative;
+			display: block;
+			//display: inline;
+			//height: 1;
+			zoom: 1;
+	
+	}	.formelem .cont, .formelem .fe-cont {
+			position: relative;
+			display: block;
+			//display: inline;
+			z-index: 1;
+			
+/* Элементы формы */
+}	.formelem input,
+	.formelem button,
+	.formelem textarea {
+		border: none;
+		background: none;
+		vertical-align: baseline;
+
+}	.formelem .fe-cn,
+	.formelem .fe-cn u {
+		font-size: 0;
+		font-style: normal;
+		font-weight: normal;
+		text-decoration: none;
+		position: absolute;
+
+/* Спрей */
+}	.formelem .fe-cn u,
+	.fe-select .fe-cont .fe-select-elem span i {
+		overflow: hidden;
+		width: 1500px; height: 1500px;
+		background: url(/usr/tpl/picts/formelem.gif) 0 0 no-repeat;
+
+
+/* --------------- ФОРМЕЛЕМЫ --------------- */
+
+/* Кнопки, сабмит-кнопки, групп-кнопки, текст и текстареи, селекты */
+}	.fe-text .fe-cn,
+	.fe-button .fe-cn,
+	.fe-select .fe-cn {
+		position: absolute;
+		top: 0; left: 0;
+		overflow: hidden;
+		width: 50%; height: 50%;
+				
+}	.formelem .fe_tl {
+		top: 0; left: 0;
+		}	.formelem .fe_tl u {
+				position: absolute;
+				top: 0; left: 0;
+}	.formelem .fe_tr {
+		top: 0; left: 50%;
+		}	.formelem .fe_tr u {
+				top: 0; right: 0;
+}	.formelem .fe_bl {
+		top: 50%; left: 0;
+		}	.formelem .fe_bl u {
+				bottom: 0; left: 0;
+}	.formelem .fe_br {
+		top: 50%; left: 50%;
+		}	.formelem .fe_br u {
+				bottom: 0; right: 0;
+				
+/* Кнопки */
+}	.fe-button {
+		}	.fe-button * {
+				cursor: pointer; -cursor: hand;
+		}	.fe-button-pressed {
+				/* filter: alpha(opacity=70); -moz-opacity: 0.7; -khtml-opacity: 0.7; opacity: 0.7; */
+				}	.fe-button-pressed * {
+						cursor: pointer; -cursor: hand;
+		}	.fe-button-disabled {
+				/* filter: alpha(opacity=30); -moz-opacity: 0.3; -khtml-opacity: 0.3; opacity: 0.3; */
+				}	.fe-button-disabled * {
+						cursor: default;
+		}	.fe-button .fe-cn u {
+				width: 214px; height: 24px;
+				overflow: hidden;
+				}	.fe-button .fe-cn u {
+						background-position: -10px -146px;
+				}	.fe-button-pressed .fe-cn u {
+						background-position: -358px -146px;
+		}	.fe-button .cont, .fe-button .fe-cont {
+				padding: 1px;
+				zoom: 1;
+				line-height: 120%;
+				}	.fe-button .fe-button-icon {
+						display: block;
+						height: 1em;
+						background-repeat: no-repeat;
+						background-position: 0 50%;
+				}	.fe-button-pressed .fe-button-icon {
+						background-position: 100% 50%;
+
+/* Кнопки2 */
+}	.fe-button {
+		}	.fe-button b.red {
+				position: absolute;
+				width: 220px; height: 60px;
+				overflow: hidden;
+				}	.fe-button b.red u {
+						margin-top: -13px;
+						margin-left: -13px;
+
+/* Селектбокс */
+}	.fe-select {
+		//display: inline;
+		//margin-bottom: -5px;
+		//margin-right: 4px;
+		text-align: left;
+		cursor: default;
+
+}	.fe-select-open .fe-body {
+		z-index: 50 !important;
+		}	.fe-select .fe-cn u {
+				width: 214px; height: 60px;
+				/* overflow: hidden; */
+				background-position: -358px -172px;
+		}	.fe-select2 .fe-cn u {
+				background-position: -581px -172px;
+		}	.fe-select .fe-cont {
+				line-height: 100%;
+				}	.fe-select .fe-cont .fe-select-elem {
+						position: relative;
+						}	.fe-select .fe-cont .fe-select-elem span {
+								display: block;
+								}	.fe-select .fe-cont .fe-select-elem span b {
+										font-weight: normal;
+										padding: 4px;
+										display: block;
+										margin-right: 12px;
+										overflow: hidden;
+										}	.fe-select2 .fe-cont .fe-select-elem span b a {
+												color: white;
+												text-decoration: none;
+								}	.fe-select .fe-cont .fe-select-elem span i {
+										position: absolute;
+										overflow: hidden;
+										display: block;
+										top: 50%; right: 5px;
+										width: 7px; height: 6px;
+										margin-left: -4px; margin-top: -2px;
+										background-position: -236px -148px;
+								}	.fe-select2 .fe-cont .fe-select-elem span i {
+										background-position: -256px -148px;
+								}	.fe-select-open .fe-cont .fe-select-elem span i {
+										background-position: -244px auto;
+								}	.fe-select .fe-cont .fe-select-elem span i.i-invert {
+										background-position: -244px -148px;
+								}	.fe-select-open .fe-cont .fe-select-elem span i.i-invert {
+										background-position: -236px -148px;
+				}	.fe-select .fe-cont .fe-select-elem ul {
+						border: 1px solid #aaa;
+						position: absolute;
+						width: 100%;
+						background: #fff;
+						padding: 4px;
+						margin-top: -1px;
+						overflow-y: auto;
+						max-height: 150px;
+						display: none;
+						overflow: auto;
+						overflow-x: hidden;
+				}	.fe-select-open .fe-cont .fe-select-elem ul {
+						display: block;
+						}	.fe-select .fe-cont .fe-select-elem ul li {
+								position: relative;
+								}	.fe-select2 .fe-cont .fe-select-elem ul li a {
+										text-decoration: none;
+										color: black;
+						}	.fe-select .fe-cont .fe-select-elem ul li:not(:last-child) {
+								margin-bottom: 4px;
+						}	.fe-select .fe-cont .fe-select-elem ul li.hover {
+								padding: 4px;
+								margin: -4px;
+								background: #019902;
+								color: #fff;
+						}	.fe-select2 .fe-cont .fe-select-elem ul li.hover {
+								background: none;
+						}	.fe-select .fe-cont .fe-select-elem ul li.hover:not(:last-child) {
+								margin-bottom: 0;
+		
+				/*
+				}	.fe-select .pointer {
+						width: 20px; height: 100%;
+						display: block;
+						position: absolute;
+						top: 0; right: 0;
+						}	.fe-select .pointer i {
+								position: absolute;
+								top: 50%; left: 50%;
+								margin-left: -4px; margin-top: -2px;
+								width: 7px; height: 6px;
+								position: absolute;
+								background-position: -236px -147px;
+				}	.fe-select .lister {
+						position: absolute;
+						top: 0; left: 0;
+						width: 100%;
+						background: white;
+						z-index: 10;
+						}	.fe-select .lister li {
+								cursor: default;
+						}	.fe-select .lister li.hover {
+								background: #019902;
+								color: white;
+				*/
+
+
+
+/* Групп-кнопки */
+
+/* Текст и текстарея */
+}	.fe-text {
+		//display: inline;
+		}	.fe-text .fe-cn u {
+				width: 887px; height: 132px;
+				overflow: hidden;
+				}	.fe-text .fe-cn u {
+						background-position: -236px -10px;
+		}	.fe-text .cont, .fe-text .fe-cont {
+				padding: 1px;
+				line-height: 130%;
+
+
+/* Кнопки2 */
+}	.fe-button {
+		}	.fe-button b.white {
+				position: absolute;
+				width: 220px; height: 60px;
+				overflow: hidden;
+				}	.fe-button b.white u {
+						margin-top: -13px;
+						margin-left: -13px;
+}
+
+
+/* Сабмит-кнопки */
+/*
+.dropdown { position: relative; border: solid 1px #F88 }
+.dd-list { position: absolute; display: none; background-color: #EFE; z-index: 1000 }
+.dd-button { border: solid 1px lime; position: absolute; right: 0px; width:16px; height: 16px; text-align: center;}
+.dd-text { white-space:nowrap; margin-right: 20px; line-height: 16px; }
+.dd-list .selected { background-color: red; }
+*/
+
+
+/* Радио */
+/* Чекбоксы */
+/* Селекты */
+
+

@@ -1,0 +1,181 @@
+@charset "windows-1251";
+@import "default.css";
+
+/* ГЛАВНЫЕ НАСТРОЙКИ */
+
+body {
+	overflow: auto;
+	width: 100%; height: 100%;
+	background: #1e1100 url(/usr/tpl/picts/bg.gif);
+
+	/* Ссылки */
+	}	a, a.type1 {
+		color: #019902;
+	}	a.type2 {
+	}	a.type3 {
+	}	a:hover { color: #ca0101; }
+
+
+/*	Эклипс, конец света и вся хуйня в таком духе */
+.eclipse {
+	visibility: hidden;
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+	filter: alpha(opacity=60); -moz-opacity: 0.6; -khtml-opacity: 0.6; opacity: 0.6;
+	background: black;
+
+/* Матрёшка */
+
+
+
+/* Иконка */
+/*
+}	.icon-image {
+		display: inline-block;
+		width: 0; height: 0;
+		overflow: hidden;
+		}	.icon-image u {
+				display: block;
+				width: 1000px; height: 1000px;
+				background: url(/usr/tpl/picts/icons_buttons.png) 0 0 no-repeat;
+
+}	.icon_friends {
+		width: 12px; height: 12px;
+		}	.button_friends u {
+				margin-top: 0;
+				margin-left: 0;
+*/
+
+
+/* Саб-меню */
+}	ul.submenu1 {
+		clear: both;
+		overflow: hidden;
+		zoom: 1;
+		background: #f7fcef;
+		}	ul.submenu1 li {
+				float: left;
+				margin-right: 15px;
+				position: relative;
+				}	ul.submenu1 li a {
+						display: inline-block;
+						position: relative;
+						padding: 10px 0;
+						cursor: pointer;
+						}	ul.submenu1 li a i {
+								position: absolute;
+								top: 100%; left: 0;
+								width: 100%; height: 100%;
+								margin-top: -7px;
+								overflow: hidden;
+						}	ul.submenu1 li a i u {
+								position: absolute;
+								visibility: hidden;
+						}	ul.submenu1 li a.selected {
+								text-decoration: none;
+								color: black;
+								cursor: default;
+						}	ul.submenu1 li a.selected i u {
+								visibility: visible;
+								top: 0; left: 50%;
+								margin-left: -83px;
+								width: 167px; height: 7px;
+								background: url(/usr/tpl/picts/menu_carriage.gif) 0 0 no-repeat;
+				}	ul.submenu1 li sup {
+						position: absolute;
+						top: 0; left: 100%;
+						margin-top: 10px;
+						margin-left: 2px;
+						width: 10px;
+						overflow: hidden;
+						color: #aaa;
+						font-size: 85%;
+
+
+
+
+}	.submenu {
+		position: relative;
+
+}	.submenu ul {
+		clear: both;
+		overflow: hidden;
+		padding: 0 20px !important;
+		background: #f8fcee;
+		}	.submenu ul li {
+				float: left;
+				padding: 12px 15px;
+				}	.submenu ul li small {
+						position: absolute;
+						top: auto; left: auto;
+						margin-right: -21px;
+						margin-left: 2px;
+						color: #aaa;
+						width: 21px;
+		}	.submenu ul li a {
+				text-align: center;
+		}	.submenu ul li.selected {
+				background: url(/usr/tpl/picts/menu_carriage.gif) 50% 100% no-repeat;
+				}	.submenu ul li.selected a {
+						color: black;
+						text-decoration: none;
+				}	.submenu .submenu-shadow {
+					background: url(/usr/tpl/picts/menu_shadow.gif) 0 0 repeat-x;
+					position: absolute;
+					bottom: 0; left: 0;
+					width: 100%; height: 29px;
+					margin-bottom: -29px;
+					z-index: 0;
+				}
+			
+			
+			#search-results h5 {
+	color: #989898;
+	margin: 10px 20px;
+	font-size: 11px;
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+				
+}	.button_simple {
+	background-image: url(../images/1.gif);
+		padding-left: 10px;
+		padding-right: 10px;
+		line-height: 18px;
+		border: 1px solid #007700;
+		color:white;
+		margin-left: 10px;
+		text-align: center;	
+
+}	.pizdat_input {
+		height: 19px;
+		width: 300px;
+		background-image: url(../images/input.gif);
+		background-repeat: repeat-x;
+		border: none;
+		padding-left: 5px;
+		font-size: 12px;
+		font-family: Arial, Helvetica, sans-serif;
+	
+}	.c {
+		border: 1px solid #7eb97e;
+}

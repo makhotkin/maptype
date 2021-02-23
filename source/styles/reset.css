@@ -1,0 +1,62 @@
+@charset "windows-1251";
+
+/**
+ *	@name "Обнуление стандартных свойств"
+ *	@version "1.0"
+ *	@author "Слотер"
+*/
+
+/* ---------------------------------- Все браузеры ---------------------------------- */
+
+/* Боксинг-модель */
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+
+	/* Сброс */
+	}	body,
+		h1, h2, h3, h4, h5, h6,
+		form, input, button,
+		table, tr, td,
+		p,
+		ul, ol, li,
+		dl, dt, dd {
+			margin: 0; padding: 0;
+			font-weight: normal;
+			font-style: normal;
+			text-decoration: none;
+			font-size: 100%;
+			
+	}	ul, ol, li {
+			list-style: none;
+
+	/* Таблица */
+	}	table {
+			border: none; border-collapse: collapse;
+			}	table td {
+					margin: 0; padding: 0;
+					vertical-align: top;
+
+
+	/* ---------------------------------- Internet Explorer ---------------------------------- */
+
+	}	img, a img {
+			border: none;
+
+	/* Форма */
+	}	button {
+			overflow: visible;
+			-width: 0; -height: 0;
+
+	}	body {
+			overflow: auto;
+
+
+	/* ---------------------------------- Mozilla Firefox ---------------------------------- */
+		
+	}	* {
+			outline: none;
+
+}

@@ -1,0 +1,28 @@
+
+
+#search-results h5 {
+	color: #989898;
+	margin: 10px 20px;
+	font-size: 11px;
+}
+
+ul.search-results_list {
+	list-style: decimal;
+	margin-left: 20px;
+	}	.search-results_list li {
+			margin-left: 20px;
+			margin-bottom: 20px;
+			list-style: decimal;
+			font-size: 11px;
+			}	.search-results_list li h6 {
+					margin-bottom: 5px;
+					}	.search-results_list li small {
+							color: #cc0001;
+							margin-left: 10px;
+			}	.search-results_list li address {
+					font-style: normal;
+					font-size: 11px;
+			}	.search-results_list li .homesite {
+					color: #d1bc01;
+					font-size: 11px;
+}

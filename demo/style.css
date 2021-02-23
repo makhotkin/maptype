@@ -1,0 +1,179 @@
+@charset "utf-8";
+.map { position: relative; z-index: 1; height: 400px; }
+
+.layer img {
+	position: absolute;
+	margin: 0;
+	-moz-user-select: none;
+	-khtml-user-drag: none;
+}
+
+.map .bank {
+	background-color: transparent;
+	background-image: url(picts/bank.png);
+}
+
+.map .bar {
+	background-color: transparent;
+	background-image: url(picts/bar.png);
+}
+
+.map .copyright {
+	-moz-user-select: none;
+	bottom: 2px;
+	color: black;
+	font-family: Arial,sans-serif;
+	font-size: 11px;
+	position: absolute;
+	right: 12px;
+	text-align: right;
+}
+
+.map .focusEater {
+	border: medium none;
+	margin: 0pt;
+	padding: 0pt;
+	width: 1px;
+	height: 1px;
+	background-color: transparent;
+	display: block;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	z-index: -1;
+}
+
+.map .friend {
+	background-color: transparent;
+	background-image: url(picts/crown.png);
+}
+
+/* different special measures */
+.map .glass {
+	background-color: transparent;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#map-infobubble {
+	position: absolute;
+	background-color: #fffad5;
+	display: none;
+}
+
+#map-infobubble-holder{ position: relative; height: 120px; width: 200px; }
+#map-infobubble-close { position: absolute; top: 10px; right: 10px; width: 15px; height: 15px; border: 1px solid #996600; } 
+
+.infobubble .shadow_d {
+	-moz-user-select: none;
+	position: absolute;
+	left: 0px;
+	bottom: -12px;
+	width: 200px;
+	height: 12px;
+	background-image: url(picts/shadow-d.png);
+}
+
+.infobubble .shadow_r {
+	-moz-user-select: none;
+	position: absolute;
+	right: -12px;
+	top: 0px;
+	width: 12px;
+	height: 120px;
+	background-image: url(picts/shadow-r.png);
+}
+
+.infobubble .shadow_rd {
+	-moz-user-select: none;
+	position: absolute;
+	right: -12px;
+	bottom: -12px;
+	width: 12px;
+	height: 12px;
+	background-image: url(picts/shadow-rd.png);
+}
+
+.map .layers { position: absolute; }
+
+.map .radii {
+	position: absolute;
+	-moz-user-select: none;
+	-khtml-user-drag: none;
+}
+
+.map .radius .scale0 {
+	width: 480px;
+	height: 480px;
+	background-image: url(picts/radii0.png);
+}
+
+.map .radius .scale1 {
+	width: 240px;
+	height: 240px;
+	background-image: url(picts/radii1.png);
+}
+
+.map .radius .scale2 {
+	width: 120px;
+	height: 120px;
+	background-image: url(picts/radii2.png);
+}
+
+.map .radius .scale3 {
+	width: 60px;
+	height: 60px;
+	background-image: url(picts/radii3.png);
+}
+
+.map .simplemark {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	-moz-user-select: none;
+}
+
+.map .stencil {
+	background-color: #FFF;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.map .tileset { position: absolute; left: 0px; top: 0px; z-index: 0; }
+
+#map-zoom {
+	position: absolute;
+	left: 25px;
+	top: 25px;
+	width: 25px;
+	height: 243px;
+	-moz-user-select: none;
+	background: url(picts/bg.png) 0 0 repeat;
+	-background-image: none; -filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/usr/tpl/map/picts/bg.png", sizingMethod="scale");
+}
+
+#map-zoom-rails {
+	height: 193px;
+	position: relative;
+	background: url(picts/slider.gif) 50% 0 no-repeat;
+	/* cursor: n-resize; */
+}
+
+#map-zoom-slider {
+	width: 23px; height: 20px;
+	position: absolute;
+	left: 1px; top: 0;
+	cursor: n-resize;
+	background: url(picts/begunok.gif) 50% 0 no-repeat;
+	
+}
+
+#infopanel { float: right; }

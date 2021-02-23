@@ -1,0 +1,130 @@
+@charset "windows-1251"; 
+
+body {
+	font: 12px Tahoma;
+	
+	/* Параграф */
+	}	p {
+			font-size: 1em;
+			margin-bottom: .8em;
+
+	/* Заголовки */
+	/*
+	}	h1, h2, h3, h4, h5, h6 {
+			font-weight: bold;
+	}	h1 {
+			font-size: 180%;
+			margin-bottom: 15px;
+	}	h2 {
+			font-size: 15px;
+			margin-bottom: 12px;
+	}	h3 {
+			font-size: 100%;
+			font-weight: bold;
+	}	h4 {
+			font-size: 100%;
+	}	h5 {
+	}	h6 {
+	*/
+
+
+	/* Форма */
+	}	form, .form {
+
+			}	input.text {
+					font: 12px Arial;
+					padding: 2px 2px;
+					//padding: 1px 2px;
+					vertical-align: baseline;
+			
+			}	textarea {
+					font: 12px Arial;
+			
+			}	button {
+					margin: 0;
+					padding: 2px 12px; //padding: 1px 12px;
+					/* margin: 0 0 -2px 0; */
+					font: 12px Arial;
+					color: white;
+
+			}	fieldset {
+					border: none;
+					margin: 0; padding: 0;
+					}	fieldset legend {
+							margin: 0; padding: 0;
+	
+	}	.iform {
+			width: 100%;
+			
+			}	.iform .name,
+				.iform .field {
+					padding-bottom: 1.3em;
+					vertical-align: baseline;
+					
+			}	.iform .name {
+					/* width: 150px; */
+					width: 25%;
+					padding-right: 10px;
+					/* color: #888; */
+					/* border: 1px dashed red; */
+					text-align: right;
+					}	.iform .name label {
+							display: inline;
+							margin: 0; padding: 0;
+							vertical-align: baseline;
+					
+			}	.iform .field {
+					/* border: 1px dashed red; */
+					}	.iform .b-form-selector, .b-form .b-form-selector {
+							vertical-align: top;
+							display: block;
+							margin-bottom: .5em;
+							margin-left: 18px;
+							
+							/* margin-bottom: .7em; */
+					/*
+					}	.iform .b-form-selector:last-child { 
+							margin-bottom: 0;
+					*/		
+							}	.iform .b-form-selector input, .b-form .b-form-selector input {
+									margin: 0; padding: 0;
+									margin-left: -18px;
+									
+									
+							}	.iform .b-form-selector label, .b-form .b-form-selector label {
+									vertical-align: baseline;
+									
+			}	.iform .buttons {
+					
+
+
+			/* Юзер */
+			}	.b-user {
+					position: relative;
+					display: inline-block;
+					font-size: 12px;
+					/* margin-left: -1.3em; */
+					}	.b-user i {
+							display: inline-block;
+							margin-right: .3em;
+							}	.b-user i u {
+									display: block;
+									position: relative;
+									margin: -5px;
+									padding: 5px;
+							}	.b-user img {
+									width: 1.6em; height: 1.6em;
+									margin-bottom: -0.45em;
+									
+							}	.formelem .b-user img {
+									width: 1.2em; height: 1.2em;
+									margin-bottom: -0.1em;
+									/* width: .75em; height: .75em; */
+					}	.b-user b {
+							font-weight: normal;
+							
+			
+							
+			
+			
+}

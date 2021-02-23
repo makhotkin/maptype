@@ -1,0 +1,453 @@
+@charset "windows-1251";
+
+.profile {
+	padding: 20px;
+	padding-bottom: 0;
+	width: 100%;
+	position: absolute;
+	overflow-x: hidden;
+
+	/* */
+	}	.profile .user-info {
+			/* border: 1px solid red; */
+			}	.profile .user-info .l-block1 {
+					width: 2%;
+					padding-right: 10px;
+			}	.profile .user-info .l-block2 {
+					width: 20%;
+			}	.profile .user-info .l-block3 {
+					width: 20%;
+			}	.profile .user-info .l-block4 {
+					width: 20%;
+					
+					}	.profile .user-info .user-name {
+							font-weight: bold;
+							}	.profile .user-info .user-name u {
+									text-decoration: none;
+					
+					}	.profile .user-info p {
+							margin-bottom: .3em;
+							font-size: 12px;
+							
+					}	.profile .user-info p.contact-birthday {
+							color: #999;
+							font-size: 11px;
+							
+					}	.profile .user-info p.profile-control {
+							font-size: 11px;
+							
+							}	.profile .user-info .contact {
+									padding-left: 15px;
+							
+									}	.profile .user-info .contact-icq {
+											background: url(/usr/tpl/picts/contact-icon-icq.gif) 0 50% no-repeat;
+											margin-right: 5px;
+											
+									}	.profile .user-info .contact-skype {
+											background: url(/usr/tpl/picts/contact-icon-skype.gif) 0 50% no-repeat;
+					
+					
+					}	.profile .user-info .b-form-selector {
+							display: block;
+					
+					}	.profile .avatar {
+							display: block;
+					
+					}	.profile .user-info .felement-file {
+							display: block;
+							position: relative;
+							width: 50px;
+							overflow: hidden;
+							cursor: pointer; //cursor: hand;
+							}	.profile .user-info .felement-file input {
+									position: absolute;
+									margin-left: -135px;
+									filter: alpha(opacity=0); -moz-opacity: 0; -khtml-opacity: 0; opacity: 0;
+									cursor: pointer; //cursor: hand;
+									z-index: 1;
+							}	.profile .user-info .felement-file a {
+									display: block;
+									font-size: 11px;
+					
+					}	.profile .user-info .user-info-block {
+							margin-bottom: 10px;
+							
+							}	.profile .user-info .user-info-block label {
+									display: block;
+									margin-bottom: 2px;
+									font-size: 11px;
+					
+					
+					}	.profile .profile_personal p {
+							margin-bottom: 10px;
+							
+					}	.profile .profile_personal .b-form-buttons {
+							text-align: right;
+					
+	
+	/* Главный заголовок */
+	}	.profile h2 {
+			font-size: 2em;
+			font-weight: normal;
+			margin-left: 25%;
+			margin-bottom: .6em;
+			display: none;
+			
+			}	.profile h3 {
+					display: none;
+	
+	/* Тело */
+	}	.profile .l-body {
+			width: 100%;
+
+			/* Аутлайн */
+			}	.profile .l-submenu,
+				.profile .l-content {
+					/* border: 1px dotted #b5b5b5; */
+			/* Меню */
+			}	.profile .l-submenu {
+					/* width: 200px; */
+					}	.profile .l-submenu ins.min-widther {
+							width: 150px;
+							/* background: red; */
+							display: block;
+							font-size: 0;
+			/* Содержание */
+			}	.profile .l-content {
+					width: 100%;
+
+
+
+			/* ================= Любимые места ================= */
+			}	.profile .page-places {
+			
+			/* ================= Сообщения ================= */
+			}	.profile .page-messages {
+					
+					/* ---------  Написать --------- */
+					}	.profile .messages-create {
+
+							/* Вынести отдельно в сажжешн */
+							}	.profile .page-messages .b-suggestion {
+									position: relative;
+									display: inline-block;
+									
+									}	.profile .page-messages .b-suggestion .formelem {
+											cursor: text;
+											}	.profile .page-messages .b-suggestion .b-user {
+													display: inline-block;
+													margin-right: 5px;
+													}	.profile .page-messages .b-suggestion .formelem .b-user a {
+															text-decoration: none;
+															color: red;
+															font-size: 15px;
+															cursor: pointer;
+									
+									}	.profile .page-messages .b-suggestion ul {
+											position: absolute;
+											top: 100%; left: 0;
+											z-index: 2;
+											width: 100%;
+											background: #f7f7f7;
+											border: 1px solid #ccc;
+					
+					/* ---------  Входящие --------- */
+					}	.profile .messages-inbox {
+					/* ---------  Исходящие --------- */
+					}	.profile .messages-outbox {
+					/* ---------  Все --------- */
+					}	.profile .messages-all {
+			
+			
+			
+			
+			/* ================= Собеседники ================= */
+			}	.profile .page-friends {
+					}	.profile .page-friends .l-friends {
+							width: 75%;
+					}	.profile .page-friends .l-activity {
+							width: 25%;
+							}	.profile .page-friends .activity li {
+									font-size: 95%;
+									line-height: 130%;
+									margin-bottom: 1em;
+							}	.profile .page-friends .activity li small {
+									display: block;
+									color: #888;
+
+					
+					}	.profile .page-messages .b-suggestion .b-usernames-selector {
+							
+							}	.profile .page-messages .b-suggestion .b-usernames-selector ul {
+									}	.profile .page-messages .b-suggestion .b-usernames-selector .b-user {
+											cursor: pointer;
+											padding: 5px;
+											text-decoration: none;
+											}	.profile .page-messages .b-usernames-selector li.hover {
+													background: #019902;
+													}	.profile .page-messages .b-usernames-selector li.hover .b-user b {
+															color: white;
+						
+	
+											
+											
+
+
+			}	.messages-inbox .b-user {
+					display: block;
+					/* border: 1px dotted olive; */
+					/* margin-left: -2.1em; */
+					}	.messages-inbox .b-user i {
+							position: absolute;
+							top: 0; left: 0;
+							}	.messages-inbox .b-user i img {
+									width: 1.75em; height: 1.75em;
+									margin: 0;
+									margin-top: .25em;
+					}	.messages-inbox .b-user span {
+							display: block;
+							margin-left: 2.5em;
+					}	.messages-inbox .b-user b {
+							display: block;
+					}	.messages-inbox .b-user small {
+							display: block;
+							text-decoration: none;
+							color: #999;
+					} 
+					
+.messages-inbox ul {display: none; }
+.messages-inbox .msg-fulltext { display: none; }
+.messages-inbox .full ul {display: block; }
+.messages-inbox .full .msg-fulltext { display: inline; }
+.messages-inbox .full .msg-summary { display: none; }
+.messages-inbox tr.full, 
+.messages-inbox tr.reply { background: #f2ffd7; }
+					
+
+			
+			
+			
+			/* border: 1px solid blue; */
+			#profile .navigation > ul {
+					margin-bottom: 2.5em;
+					margin-right: 50px;
+					/* border: 1px solid gray; */
+					/* font-size: 95%; */
+					
+					}	#profile .navigation ul {
+							margin-bottom: 2.5em;
+							margin-right: 50px;
+					
+					}	#profile .navigation ul li {
+							/* text-align: right; */
+					}	#profile .navigation > ul li:last-child {
+							margin-bottom: 0;
+							}	#profile .navigation ul li ins {
+									text-decoration: none;
+									/* font-family: Arial; */
+									/* font-weight: bold; */
+									behavior: expression(!this.a ? (this.a = 1, (this.innerHTML = "&nbsp;" + this.innerHTML)) : 0);
+							}	#profile .navigation ul li ins:before {
+									content: "\a0";
+				
+			}	#profile .list {
+					position: relative;
+					margin: -10px;
+					/* border: 1px solid cyan; */
+					
+					}	#profile .page h3 {
+							font-size: 1.25em;
+							margin-bottom: 1.25em;
+			
+			}	.profile .messages .b-filter {
+					margin-bottom: 1em;
+			
+			}	#profile .messages table {
+					width: 100%;
+					
+					}	#profile .messages .l-user {
+							/* border: 1px solid red; */
+							width: 25%;
+					}	#profile .messages .l-message {
+							/* border: 1px solid red; */
+							width: 75%;
+					}	#profile .messages .l-actions {
+							width: 40px;
+							
+					}	#profile .messages td {
+							padding: 10px;
+							vertical-align: baseline;
+
+					}	.messages tr .message-icon {
+							display: inline-block;
+							//display: inline;
+							zoom: 1;
+							margin: 0 5px -1px -10px;
+							width: 11px; height: 12px;
+							
+					}	.messages .in .message-icon {
+							background: url(/usr/tpl/picts/message-icon-inbox.gif) 0 0 no-repeat;
+							
+					}	.messages .out .message-icon { background: url(/usr/tpl/picts/message-icon-outbox.gif) 0 0 no-repeat;
+	
+	
+	
+	
+	/* Сабменю */
+	}	.submenu {
+			font-size: .9em;
+			}	.submenu li {
+					margin-bottom: .8em;
+					}	.submenu li span {
+							position: relative;
+							margin: -3px -5px;
+							padding: 3px 5px;
+							display: inline-block;
+					}	.submenu li.selected span {
+							background: #019902;
+							}	.submenu li.selected span a {
+									color: white;
+									text-decoration: none;
+					}	.submenu li a i {
+							display: inline-block;
+							/* background: gray; */
+							margin-left: -17px;
+							margin-right: 5px;
+							width: 12px; height: 12px;
+							/* margin-right: 5px; */
+					}	.submenu li ins {
+							display: inline;
+							margin-left: .4em;
+							text-decoration: none;
+							
+							
+							
+							
+			}	#profile .submenu li.all {
+					margin-bottom: 1.4em;
+			}	#profile .submenu li.deleted {
+					margin-top: 1em;
+			}	#profile .submenu li a.history {
+			
+			/*
+			}	#profile .submenu li span.new-mes {
+					padding-left: 22px;
+					margin-left: -22px;
+			*/
+			
+			}	#profile .submenu li a.link-new-mes {
+						
+
+			
+			}	.profile .menu {
+					margin: 0 -25px;
+					padding: 0 25px;
+					margin-bottom: 2em;
+	
+	
+	/* Юзер инфо */
+	}	.profile .user-info {
+			clear: both;
+			overflow: hidden;
+			zoom: 1;
+			margin-bottom: 15px;
+			}	.profile .user-info .avatar,
+				.profile .user-info .data {
+					/* float: left; */
+					}	.profile .user-info .data {
+							margin-left: 10px;
+							}	.profile .user-info .data h5 {
+									margin-bottom: 5px;
+							}	.profile .user-info .data fieldset legend {
+									color: #b1b1b1;
+									font-size: 9px;
+
+	
+							
+	/* Персональная страница */
+	}	#profile .page_personal {
+			}	#profile .page_personal .person_data {
+					margin-right: 50px;
+	
+	
+	/* Лента друзей */
+	}	#friends {
+			}	#friends .extra {
+
+					}	#friends .extra .list {
+							margin: 0; padding: 0;
+							}	#friends .extra .list li {
+									margin-bottom: 1.2em;
+									
+									}	#friends .extra .list li small {
+											display: block;
+											margin: 0; padding: 0;
+											margin-bottom: .2em;
+											color: #999;
+									}	#friends .extra .list li a.op-friend {
+											color: #9a00cc;
+									}	#friends .extra .list li a.op-userpic {
+											color: #ccb600;
+									}	#friends .extra .list li a.op-message {
+											color: #cc4800;
+									}	#friends .extra .list li a.op-event {
+											color: #0090cc;
+									}	#friends .extra .list li a.op-favourite {
+											color: #cc0082;
+									}	#friends .extra .list li a.op-location {
+											color: #4800cc;
+	
+	
+	/* Календарь */
+	}	#profile .page_calendar {
+			}	#profile .page_calendar .calendar {
+					margin-right: 20px;
+			}	#profile .page_calendar .min-widther {
+					display: block;
+					width: 350px;
+
+
+}	.friends {
+		padding: 10px;
+		}	.friends h2 {
+				font: bold 11px Tahoma;
+				margin-bottom: 20px;
+		}	.friends ul {
+				clear: both;
+				overflow: hidden;
+				zoom: 1;
+				}	.friends ul li {
+						
+						float: left;
+						overflow: hidden;
+						margin: 0 20px 20px 0;
+						}	.friends ul li .user {
+								display: inline-block;
+								margin-right: 50px;
+								/* width: 150px; */
+		}	.friends .avatar {
+				display: block;
+		}	.friends .avatar img {
+				width: 50px; height: 50px;
+				display: block;
+				padding: 2px;
+				background: url("picts/user_bg.gif") 50% 50%;
+				position: static;
+				text-align: center;
+		}	.friends .user-name {
+				margin: 0;
+				text-decoration: underline;
+				color: #01ac01;
+				font: 11px Tahoma;
+
+				
+				
+				
+				
+	}	.profile_content {
+		width: 100%; height: 100%;
+		
+	}
+		
+	.remove .addFriend { display: none; }
+	.add .delFriend { display: none; }	

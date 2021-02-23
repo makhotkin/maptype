@@ -1,0 +1,54 @@
+@charset "utf-8";
+.map .bar {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/usr/tpl/map/picts/bar.png', sizingMethod='crop');
+}
+
+.map .bank {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/usr/tpl/map/picts/bank.png', sizingMethod='crop');
+}
+
+.map .friend {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/usr/tpl/map/picts/crown.png', sizingMethod='crop');
+}
+
+.map .infobubble .shadow_d {
+	font-size: 9px;
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/usr/tpl/map/picts/shadow-d.png', sizingMethod='scale');
+}
+
+.map .infobubble .shadow_r {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/usr/tpl/map/picts/shadow-r.png', sizingMethod='scale');
+}
+
+.map .infobubble .shadow_rd {
+	font-size: 9px;
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/usr/tpl/map/picts/shadow-rd.png', sizingMethod='crop');
+}
+
+.map .radius .scale0 {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/usr/tpl/map/picts/radii0.png', sizingMethod='crop');
+}
+
+.map .radius .scale1 {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/usr/tpl/map/picts/radii1.png', sizingMethod='crop');
+}
+
+.map .radius .scale2 {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/usr/tpl/map/picts/radii2.png', sizingMethod='crop');
+}
+
+.map .radius .scale3 {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/usr/tpl/map/picts/radii3.png', sizingMethod='crop');
+}
+
+.map .zoom-slider { font-size: 1px; }

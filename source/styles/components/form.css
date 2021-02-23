@@ -1,0 +1,22 @@
+@charset "windows-1251";
+
+/*
+form dl {
+	clear: both;
+	overflow: hidden;
+	zoom: 1;
+	}	form dt,
+		form dd {
+			float: left;
+	}	form dt {
+			width: 120px;
+	}	form dd {
+			width: 100%;
+			margin-left: -120px;
+			padding-left: 120px;
+
+	}	form .buttons {
+			margin-left: 150px;
+			text-align: right;
+}
+*/

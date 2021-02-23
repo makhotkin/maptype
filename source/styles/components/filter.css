@@ -1,0 +1,39 @@
+@charset "windows-1251";
+
+.filter {
+	
+	}	.filter div {
+			display: -moz-inline-box;
+			display: inline-block;
+			//display: inline;
+			zoom: 1;
+			margin-right: .5em;
+			margin-bottom: .5em;
+					
+			}	.filter div span {
+					color: #bbb;
+					cursor: default;
+					font-size: 85%;
+					margin-right: .26em;
+					
+			}	.filter div a {
+					position: relative;
+					color: #000;
+					margin: -.4em -.6em;
+					padding: .4em .6em;
+					
+					}	.filter div a.selected {
+							text-decoration: none;
+							background: #999;
+							color: #fff;
+							margin: -.2em;
+							padding: .2em;
+
+			}	.filter div a:hover {
+					background: #019902;
+					color: white;
+					z-index: 2;
+					text-decoration: none;
+					margin: -.4em -.6em;
+					padding: .4em .6em;
+}

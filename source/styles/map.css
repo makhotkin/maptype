@@ -1,0 +1,285 @@
+@charset "windows-1251";
+
+#map-cover {
+	position: relative; width: 100%; height: 100%; background: #333; overflow: hidden; padding-bottom: 32px;
+} #map-viewport {
+	position: relative; width: 100%; height: 100%; overflow: hidden;
+} .map { position: absolute; z-index: 1; height: 400px;
+	}	#map-ctrl-panel {
+		position: absolute; bottom:0; left: 0; width: 100%; background-color: #181818;
+		border-top: 1px solid #303030; z-index: 2; padding: 5px; zoom: 1;
+		
+		}	#map-ctrl-panel .map-control-friend .fe-cont i {
+				width: 20px; background-image: url(/usr/tpl/picts/icon-map-friends.png);
+				-background-image: url(/usr/tpl/picts/icon-map-friends.gif);
+		}	#map-ctrl-panel .map-control-radii .fe-cont i {
+				width: 20px; /* width: 12px */
+				background-image: url(/usr/tpl/picts/icon-map-radii.png);
+				-background-image: url(/usr/tpl/picts/icon-map-radii.gif);
+				
+		}	#map-ctrl-panel .map-control-objectshow .fe-cont i {
+				width: 20px; /* width: 12px */
+				background-image: url(/usr/tpl/picts/icon-map-objectshow.png);
+				-background-image: url(/usr/tpl/picts/icon-map-objectshow.gif);
+				
+		}	#map-ctrl-panel .map-control-mark .fe-cont i {
+				width: 12px; /* width: 12px; */
+				background-image: url(/usr/tpl/picts/icon-map-markshow.png);
+				-background-image: url(/usr/tpl/picts/icon-map-markshow.gif);
+		/*
+		}	#map-ctrl-panel .map-control-mark-pressed .fe-cont i {
+				width: 12px;
+				background-image: url(/usr/tpl/picts/icon-map-markshow.png);
+				-background-image: url(/usr/tpl/picts/icon-map-markshow.gif);
+		*/
+		}	#map-ctrl-panel .map-control-markshow .fe-cont i {
+				width: 12px;
+				background-image: url(/usr/tpl/picts/icon-map-delmark.png);
+				-background-image: url(/usr/tpl/picts/icon-map-delmark.gif);
+	}
+	
+	.capture #addLocationLink { display:none; }
+	#addLocationCancel { display:none; }
+	.capture #addLocationCancel { display: inline-block; //display: inline; zoom: 1; }
+	
+	.sel-mark #resetLocations { display: none; }
+	#setLocations { display: none; }
+	.sel-mark #setLocations { display: inline-block; //display: inline; zoom: 1; }
+	
+		.map .geo img {
+		position: absolute;
+		margin: 0; padding: 0;
+		-moz-user-select: none;
+		-khtml-user-drag: none;
+
+	}	.map .copyright {
+		position: absolute; bottom: 8px; right:12px; color: white; opacity: .6;
+		font-family:Arial,sans-serif; font-size: 11px; text-align: right;
+		-moz-user-select: none;
+}
+
+.map .focusEater { border: medium none;margin:0pt;padding:0pt;width:1px;height:1px;background-color:transparent;
+	display: block;position: absolute;top: -100px;left: 100px;z-index: -1;}
+
+.map .layers { position: absolute; }
+.map .border-outer { position: relative; height: 100%; width: 100%; background: url(/usr/tpl/picts/slo-temp.gif) 100% 100% no-repeat; }
+.map .border-inner { top: 0; left: 0; position: absolute;} /* removed size */ 
+.map .radii { position: absolute; -moz-user-select: none; -khtml-user-drag: none; }
+.map .stencil {background-color:#333333;left:0;overflow:hidden;position:absolute;top:0;width:100%;height:100%;z-index:-2;}
+.map .tileset {position:relative;left:0px;top:0px;z-index:0;}
+.map .tileset img {position:absolute;-ms-interpolation-mode: bicubic;}
+
+.border-outer .bar-n { position: absolute; top: 0; left: 0; width: 100%; height: 0px; }
+.border-outer .bar-e { position: absolute; top: 0; right: 10px; height: 100%; width: 0px; }
+.border-outer .bar-s { position: absolute; bottom: 10px; left: 0; width: 100%; height: 0px; }
+.border-outer .bar-w { position: absolute; top: 0; left: 0; height: 100%; width: 0px; }
+
+#map-zoom {
+	position: absolute;
+	left: 25px; top: 45px;
+	width: 25px; height: 243px;
+	-moz-user-select: none;
+}
+
+#map-zoom-rails {
+	margin: 5px 0;
+	width: 21px; height: 211px;
+	position: relative;
+	background: url(/usr/tpl/picts/map/slider.png) 50% 0 no-repeat;
+	-background-image: none; -filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/usr/tpl/picts/map/slider.png", sizingMethod="scale");
+	/* cursor: n-resize; */
+}
+#map-zoom-slider {
+	width: 19px; height: 20px;
+	position: absolute;
+	left: 1px; top: 0;
+	cursor: n-resize;
+	background: url(/usr/tpl/picts/map/begunok.gif) 50% 0 no-repeat;
+}
+
+#infopanel { float: right; width: 250px; }
+
+.map-arrows {
+	position: absolute;
+	top: 320px; left: 18px;
+	
+	}	.map-arrows .cont {
+			position: relative;
+			width: 37px; height: 41px;
+			background: url(/usr/tpl/picts/map/controller.gif) 0 0 no-repeat;
+	
+			}	.map-arrows i {
+					display: block;
+					position: absolute;
+					font-size: 0;
+					cursor: pointer;
+
+			}	.map-arrows .cont i.arrow-up {
+					top: 0; left: 10px;
+					width: 19px; height: 11px;
+					
+			}	.map-arrows .cont i.arrow-right {
+					top: 11px; left: 29px;
+					width: 10px; height: 19px;
+					
+			}	.map-arrows .cont i.arrow-down {
+					top: 30px; left: 10px;
+					width: 19px; height: 11px;
+					
+			}	.map-arrows .cont i.arrow-left {
+					top: 11px; left: 0;
+					width: 10px; height: 19px;
+}					
+
+.drag .border-outer { cursor:url(/usr/tpl/img/grab.cur) !important; }
+.drag[class] .border-outer { cursor:-moz-grab !important;}
+.dragging .border-outer { cursor:url(/usr/tpl/img/grabbing.cur) !important; }
+.dragging[class] .border-outer { cursor:-moz-grabbing !important;}
+
+	.map .marks-image div {
+		position: absolute;
+		margin-top: -46px; margin-left: -11px;
+		display: block; z-index: 0;
+		width: 76px; height: 58px;
+		overflow: hidden;
+		-moz-user-select: none; -khtml-user-drag: none; 		
+		/* background: url(/usr/tpl/picts/map/map_icons.png) 0 0 no-repeat; */
+		/* -behavior: url("/usr/tpl/styles/htc/png.htc"); */
+	
+	/* Активные области иконок */
+	}	.map .layers .marks a {
+					position: absolute;
+					z-index: 100;
+					display: block;
+					margin-top: -30px; -margin-top: -29px;
+					margin-left: 11px;
+					width: 38px; height:22px;
+					zoom: 1;
+
+					
+	}	.border-inner a {
+			display: block;
+			
+	
+	
+}	.marks-image .bars_and_pubs {
+		background: url(/usr/tpl/picts/map/map_icon_7.png) 0 0 no-repeat;
+		-background: url(/usr/tpl/picts/map/map_icon_7.gif) 0 0 no-repeat;
+}	.marks-image .caffer {
+		background: url(/usr/tpl/picts/map/map_icon_6.png) 0 0 no-repeat;
+		-background: url(/usr/tpl/picts/map/map_icon_6.gif) 0 0 no-repeat;
+}	.marks-image .cinema {
+		background: url(/usr/tpl/picts/map/map_icon_3.png) 0 0 no-repeat;
+		-background: url(/usr/tpl/picts/map/map_icon_3.gif) 0 0 no-repeat;
+}	.marks-image .concert { background: url(/usr/tpl/picts/map/map_icon_4.png) 0 0 no-repeat; -background: url(/usr/tpl/picts/map/map_icon_4.gif) 0 0 no-repeat;
+}	.marks-image .education { background: url(/usr/tpl/picts/map/map_icon_1.png) 0 0 no-repeat; -background: url(/usr/tpl/picts/map/map_icon_1.gif) 0 0 no-repeat;
+}	.marks-image .gallery { background: url(/usr/tpl/picts/map/map_icon_2.png) 0 0 no-repeat; -background: url(/usr/tpl/picts/map/map_icon_2.gif) 0 0 no-repeat;
+}	.marks-image .theatre { background: url(/usr/tpl/picts/map/map_icon_9.png) 0 0 no-repeat; -background: url(/usr/tpl/picts/map/map_icon_9.gif) 0 0 no-repeat;
+}	.marks-image .supermarket, .marks-image .shop_center, .marks-image .boutique { background: url(/usr/tpl/picts/map/map_icon_8.png) 0 0 no-repeat; -background: url(/usr/tpl/picts/map/map_icon_8.gif) 0 0 no-repeat;
+}	.marks-image .nightclub { background: url(/usr/tpl/picts/map/map_icon_5.png) 0 0 no-repeat; -background: url(/usr/tpl/picts/map/map_icon_5.gif) 0 0 no-repeat;
+
+
+}	.map .hover {
+		background-position: 0 -58px;
+}	.map .sel {
+		background-position: 0 -116px;
+/* ie6 */
+}	.map v\:rect {
+		margin-top: 0 !important;
+}	.map .hover v\:rect {
+		margin-top: -58px !important;
+}	.map .sel v\:rect {
+		margin-top: -116px !important;
+} .map .ptr_friend { position: absolute; z-index:0; width: 49px; height: 39px; background: url(/usr/tpl/picts/map/friend.png) 0 0 no-repeat; display: block; margin: -39px 0 0 -13px;
+			-background: url(/usr/tpl/picts/friend_bg.gif) 0 0 no-repeat;
+}
+
+	.border-outer .marks { z-index: 102; }
+	.border-outer .friends { z-index: 101; }
+	.border-outer .bookmarks { z-index: 100; }
+	
+
+	/* .map .border-inner div { position: absolute; width: 35px; height: 35px; margin: -17px 0 0 -17px; } */
+	.border-outer a.mark { display: block; position: absolute; width: 9px; height: 9px; font-size: 0; z-index: 50000; cursor: pointer; //cursor: hand; }
+		
+	.border-outer .bar-n .mark { background-image: url(/usr/tpl/picts/map/border-icon-n.gif ); margin-left: -5px; }
+	.border-outer .bar-s .mark { background-image: url(/usr/tpl/picts/map/border-icon-s.gif ); margin-left: -5px; margin-top: -9px; }
+	.border-outer .bar-e .mark { background-image: url(/usr/tpl/picts/map/border-icon-w.gif ); margin-left: -9px; margin-top: -5px; }
+	.border-outer .bar-w .mark { background-image: url(/usr/tpl/picts/map/border-icon-e.gif ); margin-top: -5px; }
+	
+	.border-outer .caffer { background-position: -18px 0; } 
+	.border-outer .bars_and_pubs { background-position: -9px 0; } 
+	.border-outer .cinema { background-position: -45px 0; }
+	.border-outer .concert { background-position: -36px 0; }
+	.border-outer .gallery { background-position: -54px 0; }
+	.border-outer .education { background-position: -63px 0; }
+	.border-outer .supermarket { background-position: 0 0; }
+	.border-outer .nightclub { background-position: -27px 0; }
+
+	.border-outer .bookmark { padding: 16px; }
+	.border-outer div.bookmark { position: absolute; width:33px; height: 33px; background-image: url(/usr/tpl/picts/map/border-icons-mark.png); background-repeat: no-repeat; }
+	.border-outer div.bookmark-active { position: absolute; width:33px; height: 33px; background-image: url(/usr/tpl/picts/map/border-icons-mark-active.png); }	
+	.border-outer .bar-n .bookmark { background-position: -66px 0; margin: 0 0 0 -16px; }
+	.border-outer .bar-s .bookmark { background-position: -33px 0; margin: -33px 0 0 -16px; }
+	.border-outer .bar-w .bookmark { background-position: -99px 0; margin: -16px 0 0 0; }
+	.border-outer .bar-e .bookmark { background-position: 0 0; margin: -16px 0 0 -33px; }
+
+
+.map .ptr_friend.online {
+	background-position: 0 100%;
+}
+
+.map .ptr_friend img { margin: 2px 0 0 2px; width: 25px; height: 25px; }
+
+
+canvas {
+	position: absolute;
+	top: 0; left: 0;
+}
+
+.layers .bookmarks div {
+	z-index:0;
+	position: absolute;
+	background: url(/usr/tpl/picts/map/cursor_gray.png) 0 0 no-repeat;
+	-background-image: none; -filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/usr/tpl/picts/map/cursor_gray.png", sizingMethod="crop");
+	width: 32px; height: 31px;
+	margin-top: -16px;
+	margin-left: -16px;
+}
+
+.map .layers .bookmarks .active {
+	background: url(/usr/tpl/picts/map/cursor.png) 0 0 no-repeat;
+	-background-image: none; -filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/usr/tpl/picts/map/cursor.png", sizingMethod="crop");
+	}
+
+.map .flag {
+	width: 32px; height: 31px;
+	background: url(/usr/tpl/picts/map/cursor.png) 0 0 no-repeat;
+	-background-image: none; -filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/usr/tpl/picts/map/cursor.png", sizingMethod="crop");
+	position: absolute;
+	margin-top: -16px;
+	margin-left: -16px;
+	display: none;
+	-moz-user-select: none;
+	-khtml-user-drag: none;
+} 
+
+.editing { margin: -140px 0 0 16px; }
+.editing #editPointMapPlace { display: none; } 
+.adding { margin: -16px 0 0 -4px; z-index: 100500; } 
+.map .active { z-index: 10; } 
+
+/* Friends button */
+button:disabled {
+	filter:alpha(opacity=50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+
+button.disabled {
+	filter:alpha(opacity=50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
